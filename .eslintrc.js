@@ -54,6 +54,8 @@ module.exports = {
         'no-constant-condition': ['error', { checkLoops: false }],
         'no-empty': 'off',
         // Additional overrides for eslint-config-love compatibility
+        // These rules are disabled to maintain backward compatibility with the existing codebase
+        // and prevent unnecessary code changes during the migration from eslint-config-standard-with-typescript
         '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/consistent-type-imports': 'off',
