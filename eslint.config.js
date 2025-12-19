@@ -1,3 +1,5 @@
+// Copyright Kani Contributors
+// SPDX-License-Identifier: Apache-2.0 OR MIT
 const tseslint = require('typescript-eslint');
 const eslintPluginPrettier = require('eslint-plugin-prettier');
 const eslintConfigLove = require('eslint-config-love').default || require('eslint-config-love');
