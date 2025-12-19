@@ -83,7 +83,7 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts",
+    "lint": "eslint src/**/*.ts",
     "pretty": "prettier --write \"src/**/*.ts\"",
     "prettier:check:ci": "npx prettier --check \"src/**/*.{ts,tsx}\"",
     "test": "node ./out/test/runTest.js"

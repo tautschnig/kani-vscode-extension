@@ -6,7 +6,6 @@ const eslintPluginNoNull = require('eslint-plugin-no-null');
 const eslintPluginTsdoc = require('eslint-plugin-tsdoc');
 const eslintPluginPrettier = require('eslint-plugin-prettier');
 const eslintPluginImport = require('eslint-plugin-import');
-const tseslint = require('typescript-eslint');
 const eslintConfigPrettier = require('eslint-config-prettier');
 
 module.exports = (async function config() {
@@ -21,7 +20,6 @@ module.exports = (async function config() {
         'dist/**',
         'types/*.d.ts',
         '.eslintrc.js',
-        'out/**',
       ],
     },
     {
