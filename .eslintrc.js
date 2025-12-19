@@ -9,9 +9,11 @@ module.exports = {
         node: true,
         mocha: true,
     },
-    plugins: ['@typescript-eslint', 'header', 'no-null', 'eslint-plugin-tsdoc', 'prettier'],
+    plugins: ['@typescript-eslint', 'header', 'no-null', 'eslint-plugin-tsdoc', 'prettier', 'import'],
     extends: [
-        'love',
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'prettier',
     ],
     rules: {
