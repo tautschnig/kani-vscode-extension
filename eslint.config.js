@@ -6,7 +6,9 @@ const eslintConfigLove = require('eslint-config-love').default || require('eslin
 const eslintConfigPrettier = require('eslint-config-prettier');
 const eslintPluginHeader = require('eslint-plugin-header');
 const eslintPluginNoNull = require('eslint-plugin-no-null');
-const eslintPluginTsdoc = require('eslint-plugin-tsdoc');
+// NOTE: eslint-plugin-tsdoc temporarily removed due to ESLint 10 incompatibility
+// See: https://github.com/microsoft/tsdoc/issues/455
+// const eslintPluginTsdoc = require('eslint-plugin-tsdoc');
 const importPlugin = require('eslint-plugin-import');
 
 module.exports = tseslint.config(
@@ -34,13 +36,13 @@ module.exports = tseslint.config(
         plugins: {
             header: eslintPluginHeader,
             'no-null': eslintPluginNoNull,
-            tsdoc: eslintPluginTsdoc,
+            // tsdoc: eslintPluginTsdoc, // Temporarily removed due to ESLint 10 incompatibility
             prettier: eslintPluginPrettier,
             import: importPlugin,
         },
         rules: {
             curly: 2,
-            'tsdoc/syntax': 'warn',
+            // 'tsdoc/syntax': 'warn', // Temporarily removed due to ESLint 10 incompatibility
             'no-async-promise-executor': 'off',
             '@typescript-eslint/no-misused-promises': 'off',
             '@typescript-eslint/typedef': 'warn',
